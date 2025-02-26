@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+</head>
+<body>
+
+    <h1>Health Data Visualization</h1>
+   <h2>Created by Shreya Barki</h2> 
+
+    <div class="container">
+        <label for="scatter-dropdown">Select Attribute:</label>
+        <select id="scatter-dropdown"></select>
+    </div>
+
+    <div class="charts-container">
+        <div class="chart">
+            <h2>Scatter Plot</h2>
+            <div id="scatterplot"></div>
+        </div>
+
+        <div class="chart">
+            <h2>Poverty Histogram</h2>
+            <div id="poverty-histogram"></div>
+        </div>
+
+        <!-- <div class="chart">
+            <h2>Blood Pressure Histogram</h2>
+            <div id="blood-pressure-histogram"></div>
+        </div> -->
+    </div>
+
+    <div class="map-container">
+        <h2>Choropleth Map</h2>
+        <svg id="map"></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
